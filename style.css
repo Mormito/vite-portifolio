@@ -1,0 +1,143 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: rgb(20, 20, 20);
+  margin: 0;
+  padding: 0;
+
+}
+
+.buttons {
+  height: 40%;
+  width: 120px;
+  margin: 20px;
+  font-size: clamp(10px, 0.8vw, 70vh);
+  color: white;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  text-align: center;
+}
+
+.text {
+  font-size: 20px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.buttons:hover {
+  color: rgb(62, 198, 231);
+  transition: all .3s ease-in-out;
+  transform: scale(1.05);
+}
+
+.topside {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/** midside **/
+
+.midtext {
+  color: white;
+}
+
+.hello {
+  color: white;
+  text-align: center;
+}
+
+.myphoto {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/** bottom side **/
+
+.bottomside {
+  color: white;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 90%;
+
+  display: block;
+  align-items: right;
+  justify-content: center;
+
+
+}
+
+.bottom{
+  border: 1px solid rgb(36, 36, 36);
+  border-radius: 20px;
+
+  width: 30%;
+  padding: 7px;
+
+  background-color: rgb(36, 36, 36);
+
+  transform: translate(110%, 0%);
+
+  transition: all .3s ease-in-out;
+}
+
+.bottom:hover{
+  transition: all .3s ease-in-out;
+  box-shadow: 0 0 40px rgb(62, 198, 231);
+}
+
+.bottom img{
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.bottomh2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.bottomp {
+  font-size: 15px;
+  text-align: center;
+}
+
+.bonitin img{
+  border: 1px solid white;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 730px) {
+  .buttons {
+      font-size: 12px;
+      width: 100px;
+  }
+
+  .myphoto {
+      width: 80%;
+      max-width: 200px;
+  }
+
+  .bottomside {
+      max-width: 100%;
+      padding: 0 10px;
+  }
+
+  .bottomh2 {
+      font-size: 18px;
+  }
+
+  .bottomp {
+      font-size: 14px;
+  }
+}
